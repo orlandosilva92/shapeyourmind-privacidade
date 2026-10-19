@@ -12,14 +12,14 @@
 </head>
 <body>
 <h1>Política de Privacidade do ShapeYourMind</h1>
-<p>Última atualização: 18 de outubro de 2026.</p>
+<p>Última atualização: 19 de outubro de 2026.</p>
 
 <p>O ShapeYourMind ("app") é um aplicativo de desenvolvimento pessoal com hábitos de saúde, mente e produtividade. O responsável pelo app é José Orlando da Silva (pessoa física, Brasil), contato: <a href="mailto:joseorlandodasilv@gmail.com">joseorlandodasilv@gmail.com</a>.</p>
 
 <h2>1. Resumo</h2>
 <ul>
   <li>A maior parte dos seus dados fica <strong>somente no seu aparelho</strong>.</li>
-  <li>Nada de saúde, treino, peso, sono, alimentação ou localização é enviado para nossos servidores.</li>
+  <li>Não temos servidores próprios com seus dados de saúde, treino, peso, sono, alimentação ou localização. A única exceção são os pedidos de <strong>inteligência artificial</strong> que você mesmo iniciar (seção 5), que são enviados ao Google.</li>
   <li>Não vendemos seus dados e não mostramos anúncios personalizados nesta versão.</li>
   <li>Você pode apagar tudo a qualquer momento dentro do app.</li>
 </ul>
@@ -46,7 +46,8 @@
   <li><strong>Mapas (OpenStreetMap):</strong> para exibir o mapa do percurso, o app baixa imagens de mapa de servidores do OpenStreetMap, que podem registrar o endereço IP e a região visualizada. O seu trajeto em si não é enviado.</li>
   <li><strong>Código de barras (Open Food Facts):</strong> ao escanear um produto, apenas o número do código de barras é enviado para consultar a tabela nutricional.</li>
   <li><strong>Vídeos de exercício (YouTube):</strong> o player oficial só carrega após você tocar em "Carregar vídeo". O YouTube pode coletar dados conforme a política do Google.</li>
-  <li><strong>Inteligência artificial (Google Gemini):</strong> recursos de IA (montar treino, cardápio, receitas) são opcionais, exigem consentimento explícito antes do primeiro uso e só funcionam em versões em que estiverem habilitados. Quando usados, enviam apenas os dados necessários ao pedido (por exemplo, objetivo, limitações selecionadas, metas de refeição, idade, altura e peso para o cardápio), nunca nome ou e-mail. O texto livre de limitações de saúde não é enviado.</li>
+  <li><strong>Inteligência artificial (Google Gemini, via Firebase AI Logic):</strong> os recursos de IA (montar treino, cardápio, receitas e sugestões de refeição) são <strong>opcionais</strong> e exigem seu consentimento explícito antes do primeiro uso. O pedido passa pelo Firebase AI Logic, protegido pelo Firebase App Check; não existe chave de acesso dentro do app. Só são enviados os dados necessários ao pedido: no treino, objetivo, nível, local, dias, tempo e as limitações de saúde que você marcou (o texto livre de limitações nunca é enviado); no cardápio e nas sugestões, metas de refeição e proteína, restrições alimentares, preferências que você digitar, idade, sexo (se informado), altura, peso e objetivo. Nunca enviamos seu nome nem seu e-mail. <strong>Atenção:</strong> na camada gratuita do Gemini API, o Google pode usar o conteúdo enviado para melhorar seus produtos, conforme os termos dele; por isso, não inclua nada que não queira compartilhar. Se você não usar os recursos de IA, nada disso é enviado.</li>
+  <li><strong>Verificação de integridade (Firebase App Check e Google Play Integrity):</strong> para que só o app original, instalado pela Play Store, use os serviços em nuvem, o app envia ao Google um comprovante (token) de integridade. Ele contém dados técnicos do aparelho e do app (como modelo, versão do Android e a loja de origem) e é usado só para proteção contra abuso.</li>
   <li><strong>Compras e anúncios (RevenueCat e AdMob):</strong> esta versão não exibe anúncios nem processa pagamentos. Se esses recursos forem ativados no futuro, esta política será atualizada antes disso.</li>
 </ul>
 
